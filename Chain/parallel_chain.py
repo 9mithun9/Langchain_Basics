@@ -2,7 +2,8 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv
-from langchain.schema.runnable import RunnableParallel  
+from langchain.schema.runnable import RunnableParallel 
+
 
 load_dotenv()
 
@@ -45,6 +46,9 @@ chain = parallel_chain | prompt_merge | model_1 | parser
 result = chain.invoke({'topic': 'Transformer: Attention is All You Need'})
 print(result)
 chain.get_graph().print_ascii()
+
+
+
 
 
 
