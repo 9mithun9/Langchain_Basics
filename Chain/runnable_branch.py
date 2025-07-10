@@ -66,4 +66,3 @@ chain = email_chain | parallel_chain | branch_chain
 result = chain.invoke({})
 print(result)
 chain.get_graph().print_ascii()
-
