@@ -20,7 +20,7 @@ def convert_weather(temp: Annotated[float, InjectedToolArg]) -> float:
     return round((((9/5) * temp) + 32),2)
 
 
-query = HumanMessage('What is the temperature of latitude 13.447059 and longitude 101.543826? After that convert that temperature to Farenheit.')
+query = HumanMessage('What is the temperature of latitude 13.447059 and longitude 101.543826? After that, convert that temperature to Farenheit.')
 
 message_history = [query]
 
